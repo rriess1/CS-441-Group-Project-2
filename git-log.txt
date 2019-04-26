@@ -1,0 +1,245 @@
+commit 57b0c09964b88d7a4f4529163893d8f21e844234
+Author: Marc Shelton <mshelto3@binghamton.edu>
+Date:   Fri Apr 26 19:56:13 2019 -0400
+
+    ujawneiowjelkawenla
+
+ README.md                                          |   2 +
+ android/assets/1.jpg                               | Bin 39052 -> 96060 bytes
+ android/assets/165789c7a466a42.jpg                 | Bin 5180 -> 0 bytes
+ android/assets/2.jpg                               | Bin 0 -> 39052 bytes
+ .../{Blue_Cloudy_Sky_Background-1074.jpg => 3.jpg} | Bin
+ android/assets/{12.jpg => 4.jpg}                   | Bin
+ android/assets/Weather-Background-1.jpg            | Bin 71701 -> 0 bytes
+ android/assets/angry.mp3                           | Bin 0 -> 63665 bytes
+ android/assets/background.jpg                      | Bin 0 -> 48277 bytes
+ .../{580b585b2edbce24c47b2639.png => cloud.png}    | Bin
+ android/assets/death.mp3                           | Bin 91670 -> 0 bytes
+ android/assets/maxresdefault.jpg                   | Bin 96060 -> 0 bytes
+ android/assets/meow.mp3                            | Bin 0 -> 34826 bytes
+ ...d9ba8fd457be9058a4b0c543b5.jpg => overback.jpg} | Bin
+ android/assets/{download.png => rain.png}          | Bin
+ .../{Wall_Snowflake.PNG.png => snowflake.png}      | Bin
+ android/assets/sun.png                             | Bin 0 -> 1990 bytes
+ android/assets/yahoo.mp3                           | Bin 51546 -> 0 bytes
+ core/src/com/weather/game/GameOver.java            |  11 ++-
+ core/src/com/weather/game/GameScreen.java          |  79 +++++++++++++--------
+ core/src/com/weather/game/StartMenu.java           |   9 +--
+ 21 files changed, 58 insertions(+), 43 deletions(-)
+
+commit a82f8b3ee99dde28994e3cad393d7a06f8f00908
+Author: Marc Shelton <mshelto3@binghamton.edu>
+Date:   Thu Apr 25 22:26:57 2019 -0400
+
+    rijeowijneoawa
+
+ android/assets/1.jpg                                | Bin 0 -> 39052 bytes
+ android/assets/12.jpg                               | Bin 0 -> 47519 bytes
+ android/assets/165789c7a466a42.jpg                  | Bin 0 -> 5180 bytes
+ android/assets/580b585b2edbce24c47b2639.png         | Bin 0 -> 2509 bytes
+ android/assets/Blue_Cloudy_Sky_Background-1074.jpg  | Bin 0 -> 891652 bytes
+ android/assets/Wall_Snowflake.PNG.png               | Bin 0 -> 4238 bytes
+ android/assets/Weather-Background-1.jpg             | Bin 0 -> 71701 bytes
+ android/assets/ae294bd9ba8fd457be9058a4b0c543b5.jpg | Bin 0 -> 96669 bytes
+ android/assets/background.png                       | Bin 612288 -> 0 bytes
+ android/assets/cat.png                              | Bin 0 -> 3486 bytes
+ android/assets/download.png                         | Bin 98762 -> 2542 bytes
+ android/assets/maxresdefault.jpg                    | Bin 0 -> 96060 bytes
+ android/assets/pizguy.png                           | Bin 4899 -> 0 bytes
+ android/assets/pizza.png                            | Bin 2462 -> 0 bytes
+ 14 files changed, 0 insertions(+), 0 deletions(-)
+
+commit dd1a93943c4b60c43c1f1c427326d769aed6c2e4
+Author: Marc Shelton <31292284+mshelto3@users.noreply.github.com>
+Date:   Thu Apr 25 21:37:53 2019 -0400
+
+    aerawrwaerwaeaw
+
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 7063f96a331726d53054bf3424e1380415f0cbc0
+Author: Marc Shelton <mshelto3@binghamton.edu>
+Date:   Thu Apr 25 21:37:23 2019 -0400
+
+    commit
+
+ .gitignore                                         | 132 ++++++++++++-
+ .idea/gradle.xml                                   |   1 +
+ .idea/vcs.xml                                      |   1 +
+ README.md                                          |   1 -
+ android/AndroidManifest.xml                        |  24 +++
+ android/assets/BebasNeue-Regular.ttf               | Bin 0 -> 60576 bytes
+ android/assets/background.png                      | Bin 0 -> 612288 bytes
+ android/assets/death.mp3                           | Bin 0 -> 91670 bytes
+ android/assets/download.png                        | Bin 0 -> 98762 bytes
+ android/assets/pizguy.png                          | Bin 0 -> 4899 bytes
+ android/assets/pizza.png                           | Bin 0 -> 2462 bytes
+ android/assets/yahoo.mp3                           | Bin 0 -> 51546 bytes
+ android/build.gradle                               | 146 ++++++++++++++
+ android/ic_launcher-web.png                        | Bin 0 -> 22195 bytes
+ android/proguard-rules.pro                         |  45 +++++
+ android/project.properties                         |   9 +
+ android/res/drawable-anydpi-v26/ic_launcher.xml    |   6 +
+ .../drawable-anydpi-v26/ic_launcher_foreground.xml |  40 ++++
+ android/res/drawable-hdpi/ic_launcher.png          | Bin 0 -> 16820 bytes
+ android/res/drawable-mdpi/ic_launcher.png          | Bin 0 -> 16124 bytes
+ android/res/drawable-xhdpi/ic_launcher.png         | Bin 0 -> 17915 bytes
+ android/res/drawable-xxhdpi/ic_launcher.png        | Bin 0 -> 18746 bytes
+ android/res/drawable-xxxhdpi/ic_launcher.png       | Bin 0 -> 19448 bytes
+ android/res/values/color.xml                       |   4 +
+ android/res/values/strings.xml                     |   6 +
+ android/res/values/styles.xml                      |  12 ++
+ android/src/com/weather/game/AndroidLauncher.java  |  16 ++
+ app/.gitignore                                     |   1 -
+ app/build.gradle                                   |  28 ---
+ app/proguard-rules.pro                             |  21 --
+ .../example/group2/ExampleInstrumentedTest.java    |  26 ---
+ app/src/main/AndroidManifest.xml                   |  34 ----
+ app/src/main/java/com/example/group2/Chartas.java  | 216 ---------------------
+ .../main/java/com/example/group2/MainActivity.java |  13 --
+ app/src/main/java/com/example/group2/Restart.java  |  18 --
+ .../res/drawable-v24/ic_launcher_foreground.xml    |  34 ----
+ .../main/res/drawable/ic_launcher_background.xml   | 170 ----------------
+ app/src/main/res/layout/activity_main.xml          |  18 --
+ app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml |   5 -
+ .../res/mipmap-anydpi-v26/ic_launcher_round.xml    |   5 -
+ app/src/main/res/mipmap-hdpi/ic_launcher.png       | Bin 2963 -> 0 bytes
+ app/src/main/res/mipmap-hdpi/ic_launcher_round.png | Bin 4905 -> 0 bytes
+ app/src/main/res/mipmap-mdpi/ic_launcher.png       | Bin 2060 -> 0 bytes
+ app/src/main/res/mipmap-mdpi/ic_launcher_round.png | Bin 2783 -> 0 bytes
+ app/src/main/res/mipmap-xhdpi/ic_launcher.png      | Bin 4490 -> 0 bytes
+ .../main/res/mipmap-xhdpi/ic_launcher_round.png    | Bin 6895 -> 0 bytes
+ app/src/main/res/mipmap-xxhdpi/ic_launcher.png     | Bin 6387 -> 0 bytes
+ .../main/res/mipmap-xxhdpi/ic_launcher_round.png   | Bin 10413 -> 0 bytes
+ app/src/main/res/mipmap-xxxhdpi/ic_launcher.png    | Bin 9128 -> 0 bytes
+ .../main/res/mipmap-xxxhdpi/ic_launcher_round.png  | Bin 15132 -> 0 bytes
+ app/src/main/res/values/colors.xml                 |   6 -
+ app/src/main/res/values/strings.xml                |   3 -
+ app/src/main/res/values/styles.xml                 |  11 --
+ .../java/com/example/group2/ExampleUnitTest.java   |  17 --
+ build.gradle                                       | 137 +++++++++++--
+ core/build.gradle                                  |  11 ++
+ core/src/WeatherGame.gwt.xml                       |   5 +
+ core/src/com/weather/game/GameOver.java            | 109 +++++++++++
+ core/src/com/weather/game/GameScreen.java          | 202 +++++++++++++++++++
+ core/src/com/weather/game/HUD.java                 |  61 ++++++
+ core/src/com/weather/game/StartMenu.java           |  99 ++++++++++
+ core/src/com/weather/game/WeatherGame.java         |  20 ++
+ desktop/build.gradle                               |  55 ++++++
+ .../com/weather/game/desktop/DesktopLauncher.java  |  12 ++
+ gradle.properties                                  |  18 +-
+ gradle/wrapper/gradle-wrapper.jar                  | Bin 54329 -> 54208 bytes
+ gradle/wrapper/gradle-wrapper.properties           |   4 +-
+ gradlew                                            |   6 +-
+ html/build.gradle                                  |  85 ++++++++
+ html/src/com/weather/game/GdxDefinition.gwt.xml    |  11 ++
+ .../com/weather/game/GdxDefinitionSuperdev.gwt.xml |  14 ++
+ html/src/com/weather/game/client/HtmlLauncher.java |  51 +++++
+ html/webapp/WEB-INF/web.xml                        |   3 +
+ html/webapp/index.html                             |  37 ++++
+ html/webapp/refresh.png                            | Bin 0 -> 2971 bytes
+ html/webapp/soundmanager2-jsmin.js                 | 113 +++++++++++
+ html/webapp/soundmanager2-setup.js                 |   1 +
+ html/webapp/styles.css                             |  43 ++++
+ ios/Info.plist.xml                                 |  50 +++++
+ ios/build.gradle                                   |  22 +++
+ ios/data/Default-1024w-1366h@2x~ipad.png           | Bin 0 -> 106582 bytes
+ ios/data/Default-375w-667h@2x.png                  | Bin 0 -> 98595 bytes
+ ios/data/Default-414w-736h@3x.png                  | Bin 0 -> 110696 bytes
+ ios/data/Default-568h@2x.png                       | Bin 0 -> 84382 bytes
+ ios/data/Default.png                               | Bin 0 -> 29751 bytes
+ ios/data/Default@2x.png                            | Bin 0 -> 85109 bytes
+ ios/data/Default@2x~ipad.png                       | Bin 0 -> 97633 bytes
+ ios/data/Default~ipad.png                          | Bin 0 -> 34134 bytes
+ .../AppIcon.appiconset/Contents.json               | 116 +++++++++++
+ .../AppIcon.appiconset/app-store-icon-1024@1x.png  | Bin 0 -> 14555 bytes
+ .../AppIcon.appiconset/ipad-app-icon-76@1x.png     | Bin 0 -> 1385 bytes
+ .../AppIcon.appiconset/ipad-app-icon-76@2x.png     | Bin 0 -> 2318 bytes
+ .../ipad-notifications-icon-20@1x.png              | Bin 0 -> 379 bytes
+ .../ipad-notifications-icon-20@2x.png              | Bin 0 -> 793 bytes
+ .../ipad-pro-app-icon-83.5@2x.png                  | Bin 0 -> 2444 bytes
+ .../ipad-settings-icon-29@1x.png                   | Bin 0 -> 623 bytes
+ .../ipad-settings-icon-29@2x.png                   | Bin 0 -> 1102 bytes
+ .../ipad-spotlight-icon-40@1x.png                  | Bin 0 -> 793 bytes
+ .../ipad-spotlight-icon-40@2x.png                  | Bin 0 -> 1462 bytes
+ .../AppIcon.appiconset/iphone-app-icon-60@2x.png   | Bin 0 -> 1952 bytes
+ .../AppIcon.appiconset/iphone-app-icon-60@3x.png   | Bin 0 -> 2564 bytes
+ .../iphone-notification-icon-20@2x.png             | Bin 0 -> 793 bytes
+ .../iphone-notification-icon-20@3x.png             | Bin 0 -> 1119 bytes
+ .../iphone-spotlight-icon-40@2x.png                | Bin 0 -> 1462 bytes
+ .../iphone-spotlight-icon-40@3x.png                | Bin 0 -> 1952 bytes
+ .../iphone-spotlight-settings-icon-29@2x.png       | Bin 0 -> 1102 bytes
+ .../iphone-spotlight-settings-icon-29@3x.png       | Bin 0 -> 1530 bytes
+ ios/data/Media.xcassets/Contents.json              |   6 +
+ ios/robovm.properties                              |   6 +
+ ios/robovm.xml                                     |  47 +++++
+ ios/src/com/weather/game/IOSLauncher.java          |  22 +++
+ settings.gradle                                    |   3 +-
+ 112 files changed, 1768 insertions(+), 670 deletions(-)
+
+commit c7e3c5021c549bf4051b5dfccfaa9da7fdbe48bd
+Author: Robert Riess <rriessl@binghamton.edu>
+Date:   Wed Apr 24 22:12:18 2019 -0400
+
+    commit 2
+
+ app/src/main/AndroidManifest.xml                  |  23 ++-
+ app/src/main/java/com/example/group2/Chartas.java | 216 ++++++++++++++++++++++
+ app/src/main/java/com/example/group2/Restart.java |  18 ++
+ 3 files changed, 252 insertions(+), 5 deletions(-)
+
+commit 7e1e24e7c45ddd86cf98d4f2102d0296c7fde458
+Author: Robert Riess <rriessl@binghamton.edu>
+Date:   Tue Apr 23 15:46:58 2019 -0400
+
+    commit 1
+
+ .gitignore                                         |  13 ++
+ .idea/codeStyles/Project.xml                       |  29 ++++
+ .idea/gradle.xml                                   |  15 ++
+ .idea/misc.xml                                     |   9 ++
+ .idea/runConfigurations.xml                        |  12 ++
+ .idea/vcs.xml                                      |   6 +
+ app/.gitignore                                     |   1 +
+ app/build.gradle                                   |  28 ++++
+ app/proguard-rules.pro                             |  21 +++
+ .../example/group2/ExampleInstrumentedTest.java    |  26 ++++
+ app/src/main/AndroidManifest.xml                   |  21 +++
+ .../main/java/com/example/group2/MainActivity.java |  13 ++
+ .../res/drawable-v24/ic_launcher_foreground.xml    |  34 ++++
+ .../main/res/drawable/ic_launcher_background.xml   | 170 ++++++++++++++++++++
+ app/src/main/res/layout/activity_main.xml          |  18 +++
+ app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml |   5 +
+ .../res/mipmap-anydpi-v26/ic_launcher_round.xml    |   5 +
+ app/src/main/res/mipmap-hdpi/ic_launcher.png       | Bin 0 -> 2963 bytes
+ app/src/main/res/mipmap-hdpi/ic_launcher_round.png | Bin 0 -> 4905 bytes
+ app/src/main/res/mipmap-mdpi/ic_launcher.png       | Bin 0 -> 2060 bytes
+ app/src/main/res/mipmap-mdpi/ic_launcher_round.png | Bin 0 -> 2783 bytes
+ app/src/main/res/mipmap-xhdpi/ic_launcher.png      | Bin 0 -> 4490 bytes
+ .../main/res/mipmap-xhdpi/ic_launcher_round.png    | Bin 0 -> 6895 bytes
+ app/src/main/res/mipmap-xxhdpi/ic_launcher.png     | Bin 0 -> 6387 bytes
+ .../main/res/mipmap-xxhdpi/ic_launcher_round.png   | Bin 0 -> 10413 bytes
+ app/src/main/res/mipmap-xxxhdpi/ic_launcher.png    | Bin 0 -> 9128 bytes
+ .../main/res/mipmap-xxxhdpi/ic_launcher_round.png  | Bin 0 -> 15132 bytes
+ app/src/main/res/values/colors.xml                 |   6 +
+ app/src/main/res/values/strings.xml                |   3 +
+ app/src/main/res/values/styles.xml                 |  11 ++
+ .../java/com/example/group2/ExampleUnitTest.java   |  17 ++
+ build.gradle                                       |  27 ++++
+ gradle.properties                                  |  15 ++
+ gradle/wrapper/gradle-wrapper.jar                  | Bin 0 -> 54329 bytes
+ gradle/wrapper/gradle-wrapper.properties           |   6 +
+ gradlew                                            | 172 +++++++++++++++++++++
+ gradlew.bat                                        |  84 ++++++++++
+ settings.gradle                                    |   1 +
+ 38 files changed, 768 insertions(+)
+
+commit fd3573ab1a9c5aa7af1fc6e9fcce1c6234cb4a7b
+Author: tjetjj <robertwriess@yahoo.com>
+Date:   Mon Apr 22 21:55:58 2019 -0400
+
+    Initial commit
+
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
