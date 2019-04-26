@@ -36,19 +36,16 @@ public class StartMenu implements Screen {
         BitmapFont font = generator.generateFont(parameter);
         generator.dispose();
 
-        backGround2 = new Texture(Gdx.files.internal("download.png"));
-        backGround = new TextureRegion(backGround2, 0, 0, 626, 325);
+        backGround2 = new Texture(Gdx.files.internal("background.jpg"));
+        backGround = new TextureRegion(backGround2, 0, 0, 626, 352);
 
         Table table = new Table();
         table.center();
         table.setFillParent(true);
 
-        Label gameOverLabel = new Label("You have to deliver your pizza!", new Label.LabelStyle(font, Color.WHITE));
-        Label playAgainLabel = new Label("Don't get caught by the rival pizzas!", new Label.LabelStyle(font, Color.WHITE));
+        Label gameOverLabel = new Label("Help the stray cat through the weather!", new Label.LabelStyle(font, Color.BLACK));
 
         table.add(gameOverLabel).expandX();
-        table.row();
-        table.add(playAgainLabel).expandX().padTop(10f);
 
         stage.addActor(table);
     }

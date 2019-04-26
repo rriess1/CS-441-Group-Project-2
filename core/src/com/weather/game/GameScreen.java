@@ -1,25 +1,25 @@
 package com.weather.game;
 
-import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
-import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Rectangle;
-import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.TimeUtils;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 
 
-import java.io.IOException;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.Iterator;
 
 public class GameScreen implements Screen {
@@ -42,12 +42,12 @@ public class GameScreen implements Screen {
     public GameScreen (WeatherGame game) {
         this.game = game;
         //weatherService();
-        pikaImage = new Texture(Gdx.files.internal("pizguy.png"));
-        pokeImage = new Texture(Gdx.files.internal("pizza.png"));
-        backGround2 = new Texture(Gdx.files.internal("background.png"));
-        backGround = new TextureRegion(backGround2, 0, 0, 800, 480);
+        pikaImage = new Texture(Gdx.files.internal("cat.png"));
+        pokeImage = new Texture(Gdx.files.internal("sun.png"));
+        backGround2 = new Texture(Gdx.files.internal("1.jpg"));
+        backGround = new TextureRegion(backGround2, 0, 0, 1280, 720);
 
-        yahoo = Gdx.audio.newSound(Gdx.files.internal("yahoo.mp3"));
+        yahoo = Gdx.audio.newSound(Gdx.files.internal("meow.mp3"));
 
         hud = new HUD(game.batch);
 
@@ -56,8 +56,8 @@ public class GameScreen implements Screen {
         cam.position.set(port.getWorldWidth() / 2, port.getWorldHeight() / 2, 0);
 
         pikachu = new Rectangle();
-        pikachu.x = 800 / 2 - 64 / 2; // center the bucket horizontally
-        pikachu.y = 20; // bottom left corner of the bucket is 20 pixels above the bottom screen edge
+        pikachu.x = 800 / 2 - 64 / 2;
+        pikachu.y = 20;
         pikachu.width = 40;
         pikachu.height = 40;
 
@@ -126,48 +126,65 @@ public class GameScreen implements Screen {
     }
 
     /*public void weatherService(){
-        String url = "http://api.openweathermap.org/data/2.5/weather?q=Binghamton&APPID=28011474bd62663987d97ebe379f687e";
-        JsonObjectRequest jor = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>(){
-            @Override
-            public void onResponse(JSONObject response){
-                try {
-                    JSONArray array = response.getJSONArray("weather");
-                    JSONObject object = array.getJSONObject(0);
-                    change_weather(object.getString("description"));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
+        try {
+            URL url = new URL("http://api.openweathermap.org/data/2.5/weather?q=Binghamton&APPID=28011474bd62663987d97ebe379f687e";
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
+            BufferedReader reader =
+                    new BufferedReader(new InputStreamReader(connection.getInputStream()));
 
+            StringBuffer json = new StringBuffer(1024);
+            String tmp;
+
+            while((tmp = reader.readLine()) != null)
+                json.append(tmp).append("\n");
+            reader.close();
+
+            data = new JSONObject(json.toString());
+
+            if(data.getInt("cod") != 200) {
+                System.out.println("Cancelled");
+                return null;
             }
-        });
-        RequestQueue queue = Volley.newRequestQueue(this);
-        queue.add(jor);
+        } catch (Exception e) {
+            System.out.println("Exception "+ e.getMessage());
+            return null;
+        }
+        return null;
     }
+}*/
 
-    public void change_weather(String des){
+    /*public void change_weather(String des){
         if(des.contains("rain")){
             if(set != 1) {
                 set = 1;
+                backGround2 = new Texture(Gdx.files.internal("2.jpg"));
+                backGround = new TextureRegion(backGround2, 0, 0, 852, 480);
+                pokeImage = new Texture(Gdx.files.internal("rain.png"));
             }
         }
         else if(des.contains("cloudy")){
             if(set != 2) {
                 set = 2;
+                backGround2 = new Texture(Gdx.files.internal("3.jpg"));
+                backGround = new TextureRegion(backGround2, 0, 0, 1920, 1281);
+                pokeImage = new Texture(Gdx.files.internal("cloud.png"));
             }
         }
         else if(des.contains("snow")){
             if(set != 3) {
                 set = 3;
+                backGround2 = new Texture(Gdx.files.internal("4.jpg"));
+                backGround = new TextureRegion(backGround2, 0, 0, 852, 480);
+                pokeImage = new Texture(Gdx.files.internal("snowflake.png"));
             }
         }
         else if(des.contains("clear")){
             if(set != 0){
             set = 0;
+            backGround2 = new Texture(Gdx.files.internal("1.jpg"));
+        backGround = new TextureRegion(backGround2, 0, 0, 1280, 720);
+            pokeImage = new Texture(Gdx.files.internal("sun.png"));
         }
     }
 }*/

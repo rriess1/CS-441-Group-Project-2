@@ -1,6 +1,5 @@
 package com.weather.game;
 
-import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.audio.Sound;
@@ -32,10 +31,10 @@ public class GameOver implements Screen {
         viewport = new FitViewport(800, 480, new OrthographicCamera());
         stage = new Stage(viewport, game.batch);
 
-        backGround2 = new Texture(Gdx.files.internal("background.png"));
-        backGround = new TextureRegion(backGround2, 0, 0, 500, 325);
+        backGround2 = new Texture(Gdx.files.internal("overback.jpg"));
+        backGround = new TextureRegion(backGround2, 0, 0, 1600, 960);
 
-        death = Gdx.audio.newSound(Gdx.files.internal("death.mp3"));
+        death = Gdx.audio.newSound(Gdx.files.internal("angry.mp3"));
         death.play();
 
         this.hud = hud;
@@ -50,8 +49,8 @@ public class GameOver implements Screen {
         table.center();
         table.setFillParent(true);
 
-        Label gameOverLabel = new Label("Mama Mia!", new Label.LabelStyle(font, Color.BLACK));
-        Label playAgainLabel = new Label("You lost your pizza!", new Label.LabelStyle(font, Color.BLACK));
+        Label gameOverLabel = new Label("Oh no!", new Label.LabelStyle(font, Color.BLACK));
+        Label playAgainLabel = new Label("The cat got caught!", new Label.LabelStyle(font, Color.BLACK));
 
         table.add(gameOverLabel).expandX();
         table.row();
